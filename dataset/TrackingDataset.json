@@ -1,0 +1,17 @@
+{
+	"name": "TrackingDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "incremental source_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "table_store_ChangeTracking_version"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
