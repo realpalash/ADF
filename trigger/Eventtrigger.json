@@ -1,0 +1,18 @@
+{
+	"name": "Eventtrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/mydata/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/a0a5058a-9e6a-4c91-91b7-1acf69d96e30/resourceGroups/MyRG/providers/Microsoft.Storage/storageAccounts/palashacc",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
